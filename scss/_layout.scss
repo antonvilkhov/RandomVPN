@@ -1,0 +1,22 @@
+.wrapper {
+  max-width: 22.25rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.head,
+.head__block,
+.head__nav ul {
+  display: flex;
+}
+
+.head {
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+  &__block {
+    display: flex;
+  }
+}

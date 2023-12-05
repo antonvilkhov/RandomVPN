@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  <header class="head">
+  <header class="head wrapper">
     <div class="head__block">
       <img src="../assets/logo.svg" alt="logo">
       <p>Random<span>VPN</span></p>
     </div>
-    <div class="head__block">
+    <!-- <div class="head__block">
       <nav class="head__nav">
         <ul>
           <li><a href="">Features</a></li>
@@ -26,14 +26,15 @@
         </ul>
       </nav>
       <div class="head__buttons">
-        <button>Sign in</button>
-        <button>Sign up</button>
+        <button class="head__button-light">Sign in</button>
+        <button class="head__button-red">Sign up</button>
       </div>
-    </div>
+    </div> -->
+    <img src="../assets/header-menu.svg" alt="menu">
   </header>
 
   <main class="main">
-    <section class="hero">
+    <section class="hero wrapper">
       <div class="hero__image">
         <img src="../assets/hero-ill.png" alt="person behind laptop with headphones on">
       </div>
@@ -46,31 +47,39 @@
       </div>
     </section>
 
-    <section class="stats">
+    <section class="stats wrapper">
       <div class="stats__block">
         <img class="stats__icon" src="../assets/stats-icon1.svg" alt="">
-        <h4 class="stats__h4">90+</h4>
-        <p>Users</p>
+        <div class="stats__text">
+          <h4 class="stats__h4">90+</h4>
+          <p>Users</p>
+        </div>
+
       </div>
       <div class="stats__block">
         <img class="stats__icon" src="../assets/stats-icon2.svg" alt="">
-        <h4 class="stats__h4">30+</h4>
-        <p>Locations</p>
+        <div class="stats__text">
+          <h4 class="stats__h4">30+</h4>
+          <p>Locations</p>
+        </div>
+
       </div>
       <div class="stats__block">
         <img class="stats__icon" src="../assets/stats-icon3.svg" alt="">
-        <h4 class="stats__h4">50+</h4>
-        <p>Servers</p>
+        <div class="stats__text">
+          <h4 class="stats__h4">50+</h4>
+          <p>Servers</p>
+        </div>
       </div>
     </section>
 
-    <section class="features">
+    <section class="features wrapper">
       <div class="features__image">
         <img src="../assets/features-ill.png" alt="person behind laptop with headphones on">
       </div>
       <div class="features__content">
-        <h2 class="features__h2">We provide many
-          features you can use</h2>
+        <h3 class="features__h3">We provide many
+          features you can use</h3>
         <p>Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel erat
           semper augue.</p>
         <ul class="features__list">
@@ -82,51 +91,59 @@
       </div>
     </section>
 
-    <section class="plans">
-      <div class="plan">
-        <img src="../assets/plan-icon.png" alt="box full of features">
-        <h4 class="plan__h4">Free</h4>
-        <ul class="plan__list">
-          <li>Unlimited bandwitch</li>
-          <li>Encrypted connection</li>
-          <li>Yes trafic logs</li>
-        </ul>
-        <h3 class="plan__h3">Free</h3>
-      </div>
+    <section class="plans wrapper">
+      <h3 class="plans__h3">Choose your plan</h3>
+      <p>Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel erat semper
+        augue.</p>
+      <div class="plans__container">
+        <div class="plan">
+          <img src="../assets/plan-icon.png" alt="box full of features">
+          <h4 class="plan__h4">Free</h4>
+          <ul class="plan__list">
+            <li>Unlimited bandwitch</li>
+            <li>Encrypted connection</li>
+            <li>Yes trafic logs</li>
+          </ul>
+          <h3 class="plan__h3">Free</h3>
+          <button class="plan__button">Select</button>
+        </div>
 
-      <div class="plan">
-        <img src="../assets/plan-icon.png" alt="box full of features">
-        <h4 class="plan__h4">Standard plan</h4>
-        <ul class="plan__list">
-          <li>Unlimited bandwitch</li>
-          <li>Encrypted connection</li>
-          <li>Yes trafic logs</li>
-          <li>Works on all devices</li>
-          <li>Connect anyware</li>
-        </ul>
-        <h3 class="plan__h3">$ 9 / <span>mo</span></h3>
-      </div>
+        <div class="plan">
+          <img src="../assets/plan-icon.png" alt="box full of features">
+          <h4 class="plan__h4">Standard plan</h4>
+          <ul class="plan__list">
+            <li>Unlimited bandwitch</li>
+            <li>Encrypted connection</li>
+            <li>Yes trafic logs</li>
+            <li>Works on all devices</li>
+            <li>Connect anyware</li>
+          </ul>
+          <h3 class="plan__h3">$ 9 / <span>mo</span></h3>
+          <button class="plan__button">Select</button>
+        </div>
 
-      <div class="plan">
-        <img src="../assets/plan-icon.png" alt="box full of features">
-        <h4 class="plan__h4">Premium plan</h4>
-        <ul class="plan__list">
-          <li>Unlimited bandwitch</li>
-          <li>Encrypted connection</li>
-          <li>Yes trafic logs</li>
-          <li>Works on all devices</li>
-          <li>Connect anyware</li>
-          <li>Get new features</li>
-        </ul>
-        <h3 class="plan__h3">$ 12 / <span>mo</span></h3>
+        <div class="plan">
+          <img src="../assets/plan-icon.png" alt="box full of features">
+          <h4 class="plan__h4">Premium plan</h4>
+          <ul class="plan__list">
+            <li>Unlimited bandwitch</li>
+            <li>Encrypted connection</li>
+            <li>Yes trafic logs</li>
+            <li>Works on all devices</li>
+            <li>Connect anyware</li>
+            <li>Get new features</li>
+          </ul>
+          <h3 class="plan__h3">$ 12 / <span>mo</span></h3>
+          <button class="plan__button">Select</button>
+        </div>
       </div>
     </section>
 
-    <section class="network">
+    <section class="network wrapper">
       <div class="network__content">
-        <h2 class="network__h2">
+        <h3 class="network__h3">
           Huge global network of fast VPN
-        </h2>
+        </h3>
         <p>Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel erat
           semper augue.</p>
         <!-- update map with dots -->
@@ -134,11 +151,11 @@
       </div>
     </section>
 
-    <div class="logos">
+    <div class="logos wrapper">
       <img src="../assets/logos.png" alt="">
     </div>
 
-    <section class="customers">
+    <section class="customers wrapper">
       <div class="customers__review">
         <img src="../assets/customers1.png" alt="">
       </div>
@@ -150,7 +167,7 @@
       </div>
     </section>
 
-    <section class="subscribe">
+    <section class="subscribe wrapper">
       <h2 class="subscribe__h2">Subscribe now for
         get special features!</h2>
       <p class="subscribe__p">Lorem ipsum dolor sit amet</p>
@@ -159,44 +176,52 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__lists">
-      <ul>Product
-        <li>Download</li>
-        <li>Pricing</li>
-        <li>Locations</li>
-        <li>Server</li>
-        <li>Countries</li>
-        <li>Blog</li>
-      </ul>
-      <ul>Engage
-        <li>RandomVPN?</li>
-        <li>FAQ</li>
-        <li>Tutorials</li>
-        <li>About us</li>
-        <li>Privacy policy</li>
-        <li>Terms of service</li>
-      </ul>
-      <ul>
-        Earn money
-        <li>Become partner</li>
-        <li>Affilite</li>
-      </ul>
-    </div>
-
-    <div class="footer__info">
-      <div class="footer__logo">
-        <img src="../assets/logo.svg" alt="">
-        <p>Random<span>VPN</span></p>
+    <div class="wrapper">
+      <div class="footer__lists">
+        <ul>Product
+          <li>Download</li>
+          <li>Pricing</li>
+          <li>Locations</li>
+          <li>Server</li>
+          <li>Countries</li>
+          <li>Blog</li>
+        </ul>
+        <ul>Engage
+          <li>RandomVPN?</li>
+          <li>FAQ</li>
+          <li>Tutorials</li>
+          <li>About us</li>
+          <li>Privacy policy</li>
+          <li>Terms of service</li>
+        </ul>
+        <ul>
+          Earn money
+          <li>Become partner</li>
+          <li>Affilite</li>
+        </ul>
       </div>
-      <p class="footer__text">Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus
-        ullamcorper. Vel vel erat semper
-        augue.</p>
-    </div>
 
-    <div class="footer__socials">
-      <img src="../assets/socials-facebook.svg" alt="">
-      <img src="../assets/socials-whatsapp.svg" alt="">
-      <img src="../assets/socials-youtube.svg" alt="">
+      <div class="footer__info">
+        <div class="footer__logo">
+          <img src="../assets/logo.svg" alt="">
+          <p>Random<span>VPN</span></p>
+        </div>
+        <p class="footer__text">Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus
+          ullamcorper. Vel vel erat semper
+          augue.</p>
+      </div>
+
+      <div class="footer__socials">
+        <div>
+          <img src="../assets/socials-facebook.svg" alt="facebook icon">
+        </div>
+        <div>
+          <img src="../assets/socials-whatsapp.svg" alt="whatsapp icon">
+        </div>
+        <div>
+          <img src="../assets/socials-youtube.svg" alt="youtube icon">
+        </div>
+      </div>
     </div>
   </footer>
 </body>

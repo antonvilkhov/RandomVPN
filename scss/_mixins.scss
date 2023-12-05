@@ -1,0 +1,20 @@
+@mixin text($weight, $size) {
+  font-weight: $weight;
+  font-size: #{$size}rem;
+}
+
+@mixin color-dark {
+  color: #101010;
+}
+
+@mixin color-light {
+  color: #5a5a5a;
+}
+
+@mixin color-lightest {
+  color: #646464;
+}
+
+@mixin color-accent {
+  color: #f53838;
+}
