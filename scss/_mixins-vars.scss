@@ -1,0 +1,30 @@
+// mixins(variables below)
+
+@mixin text($weight, $size) {
+  font-weight: $weight;
+  font-size: #{$size}rem;
+}
+
+@mixin icon-orb {
+  display: flex;
+  justify-content: center;
+  border-radius: 18rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  background-color: rgba(245, 56, 56, 0.1);
+  img {
+    width: 1.25rem;
+  }
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// variables
+
+$color-dark: #101010;
+$color-light: #5a5a5a;
+$color-lightest: #646464;
+$color-accent: #f53838;

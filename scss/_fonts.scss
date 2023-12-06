@@ -1,8 +1,8 @@
-@use "mixins" as *;
+@use "mixins-vars" as *;
 
 body {
   font-family: "Rubik", sans-serif;
-  @include color-dark;
+  color: $color-dark;
 }
 
 .head__nav li,
@@ -14,36 +14,34 @@ a {
   text-decoration: none;
 }
 
-button {
-  color: #fff;
-}
-
 p {
   @include text(400, 0.65);
-  @include color-light;
+  color: $color-light;
 }
 
 .head {
   &__block p {
     @include text(400, 1);
-    @include color-dark;
+    color: $color-dark;
   }
 
   &__nav {
     @include text(400, 1);
   }
   &__button-light {
-    @include color-dark;
+    color: $color-dark;
+    background-color: #fff;
   }
   &__button-red {
-    @include color-accent;
+    color: $color-accent;
+    background-color: #fff;
   }
 }
 
 .hero {
   &__title {
     @include text(400, 2);
-    @include color-dark;
+    color: $color-dark;
   }
   &__title span {
     @include text(600, 2);
@@ -59,7 +57,7 @@ p {
   }
   p {
     @include text(400, 0.56);
-    @include color-lightest;
+    color: $color-lightest;
   }
 }
 
@@ -121,6 +119,6 @@ p {
   }
   li {
     @include text(400, 0.8);
-    @include color-lightest;
+    color: $color-lightest;
   }
 }
