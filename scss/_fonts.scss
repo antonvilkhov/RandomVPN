@@ -24,14 +24,18 @@ p {
     @include text(400, 1);
     color: $color-dark;
   }
-
+  &__block span {
+    @include text(600, 1);
+  }
   &__nav {
     @include text(400, 1);
   }
+
   &__button-light {
     color: $color-dark;
     background-color: #fff;
   }
+
   &__button-red {
     color: $color-accent;
     background-color: #fff;
@@ -43,9 +47,11 @@ p {
     @include text(400, 2);
     color: $color-dark;
   }
+
   &__title span {
     @include text(600, 2);
   }
+
   &__button {
     @include text(600, 0.75);
   }
@@ -55,6 +61,7 @@ p {
   &__h4 {
     @include text(600, 0.7);
   }
+
   p {
     @include text(400, 0.56);
     color: $color-lightest;
@@ -65,6 +72,7 @@ p {
   &__h3 {
     @include text(600, 1.2);
   }
+
   &__list {
     @include text(600, 0.65);
   }
@@ -74,19 +82,24 @@ p {
   &__h3 {
     @include text(600, 1.2);
   }
+
   .plan {
     &__h4 {
       @include text(600, 0.7);
     }
+
     &__list {
       @include text(400, 0.55);
     }
+
     &__h3 {
       @include text(600, 1);
     }
+
     span {
       @include text(400, 1);
     }
+
     &__button {
       @include text(500, 0.7);
     }
@@ -105,9 +118,11 @@ p {
   &__h2 {
     @include text(600, 1.6);
   }
+
   &__p {
     @include text(400, 1);
   }
+
   &__button {
     @include text(600, 1.1);
   }
@@ -117,8 +132,23 @@ p {
   ul {
     @include text(600, 0.8);
   }
+
   li {
     @include text(400, 0.8);
     color: $color-lightest;
+  }
+
+  p {
+    @include text(400, 0.95);
+    color: $color-light;
+  }
+
+  &__logo p {
+    @include text(400, 1.1);
+    color: $color-dark;
+  }
+
+  span {
+    @include text(600, 1.1);
   }
 }

@@ -5,7 +5,6 @@
   background-color: $color-accent;
   border: none;
   border-radius: 0.8rem;
-  cursor: pointer;
 }
 
 .hero__button {
@@ -52,21 +51,9 @@
   padding: 1.125rem 3.5rem;
 }
 
-.footer__lists {
-  display: flex;
-  justify-content: space-between;
-  ul {
-    flex: 1;
-    text-align: start;
-    padding: 0;
-  }
-}
-
+.button,
+.logo,
+.footer__logo,
 .footer__socials {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  div {
-    @include icon-orb;
-  }
+  cursor: pointer;
 }
