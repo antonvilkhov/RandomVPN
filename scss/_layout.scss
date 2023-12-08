@@ -182,12 +182,37 @@
 .customers {
   margin-bottom: 6.5rem;
 
+  &__review {
+    border-radius: 0.8rem;
+    border: 0.04rem solid #ccc;
+    padding: 0.835rem 1.5rem;
+
+    img {
+      width: 2.55rem;
+      margin-right: 1.12rem;
+    }
+  }
+
+  &__info {
+    margin-bottom: 0.835rem;
+    display: flex;
+    flex-direction: row;
+  }
+
   &__h3 {
     margin-bottom: 0.5rem;
   }
 
   &__content {
     margin-bottom: 2.5rem;
+  }
+
+  &__person,
+  &__text {
+    text-align: start;
+  }
+  &__rating {
+    display: flex;
   }
 }
 

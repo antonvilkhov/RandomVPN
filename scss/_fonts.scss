@@ -112,7 +112,19 @@ p {
   }
 }
 
-// place for customers
+.customers {
+  &__name {
+    @include text(600, 0.7);
+  }
+
+  &__city {
+    @include text(400, 0.6);
+  }
+
+  &__rating p {
+    @include text(500, 0.6);
+  }
+}
 
 .subscribe {
   &__h2 {
